@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/auth/normalize.css">
+    <link rel="stylesheet" href="assets/styles/auth/log-in.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Virtus | Reset password</title>
+</head>
+<body>
+    <div class="log-in-area">
+    <div class="log-in">
+    <span class="log-in-title">Reset password</span>
+    <a class="sign-up-link" href="sign-up.html" target="_blank">Not a member?</a>
+   <form class="log-in-form" id="form">
+        <input class="log-in-form_email" type="email" name="email" id="email" placeholder="Email...">
+        <input class="log-in-form_pass" type="password" name="password" id="password" placeholder="Password...">
+        <input class="log-in-form_pass" type="password" name="confirmationPassword" id="confirm" placeholder="Confirm...">
+    </form>
+    <span class="reset-warning" id="warning">Your password and confirm password not match or your account was not found.<br>
+     Please sign up.</span>
+    <button class="submit-btn" id="submit">Reset</button>
+    </div>
+    </div>
+    <script src="app/auth/repass.js"></script>
+</body>
+</html>

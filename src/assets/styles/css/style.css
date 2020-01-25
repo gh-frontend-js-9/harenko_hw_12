@@ -1,5 +1,6 @@
 :root {
-  font-family: Montserrat, sans-serif; }
+  font-family: Montserrat, sans-serif;
+  background-color: #2f3242; }
 
 .header {
   height: 96px;
@@ -14,13 +15,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #2f3242; }
+  background-color: transparent; }
 
 .header-logo {
   margin-left: 30px;
   width: 172px;
   height: 29px;
-  background-image: url(/src/assets/images/pictures/logo.png); }
+  background-image: url(/assets/images/pictures/logo.png); }
 
 .user-block {
   margin-right: 26px;
@@ -63,12 +64,12 @@
 .user-block_search-btn {
   width: 27px;
   height: 27px;
-  background-image: url(/src/assets/images/icons/search.png); }
+  background-image: url(/assets/images/icons/search.png); }
 
 .user-block_notification-btn {
   width: 26px;
   height: 31px;
-  background-image: url(/src/assets/images/icons/bell.png); }
+  background-image: url(/assets/images/icons/bell.png); }
 
 .user-profile-block {
   display: -webkit-box;
@@ -86,14 +87,14 @@
 
 .user-profile-block_user-photo {
   width: 56px;
-  height: 56px;
-  background-image: url(/src/assets/images/pictures/user-photo.png); }
+  height: 50px;
+  background-image: url(/assets/images/pictures/user.png); }
 
 .user-profile-block_user-menu-btn {
   display: block;
   width: 12px;
   height: 8px;
-  background-image: url(/src/assets/images/icons/arrow.png); }
+  background-image: url(/assets/images/icons/arrow.png); }
 
 .main {
   display: -webkit-box;
@@ -107,6 +108,9 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -125,16 +129,19 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 1070px;
+  width: 80px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  width: 96px;
-  height: 1075px;
   -webkit-box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
   box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
-  background-color: #2f3242; }
+  background-color: transparent; }
+
+.user-panel-block:hover {
+  width: 200px; }
 
 .panel-btn-block {
   display: -webkit-box;
@@ -159,29 +166,30 @@
 .panel-btn-block_home-btn {
   width: 31px;
   height: 26px;
-  background-image: url(/src/assets/images/icons/home.png); }
+  background-image: url(/assets/images/icons/home.png); }
 
 .panel-btn-block_menu-btn {
   width: 28px;
   height: 19px;
-  background-image: url(/src/assets/images/icons/menu.png); }
+  background-image: url(/assets/images/icons/menu.png); }
 
 .panel-btn-block_trending-btn {
   width: 31px;
   height: 19px;
-  background-image: url(/src/assets/images/icons/trending.png); }
+  background-image: url(/assets/images/icons/trending.png); }
 
 .panel-btn-block_message-btn {
   width: 31px;
   height: 24px;
-  background-image: url(/src/assets/images/icons/message.png); }
+  background-image: url(/assets/images/icons/message.png); }
 
 .panel-btn-block_friends-btn {
   width: 34px;
   height: 22px;
-  background-image: url(/src/assets/images/icons/friends.png); }
+  background-image: url(/assets/images/icons/friends.png); }
 
 .screen-block {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,9 +203,14 @@
   align-items: center;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset; }
 
 .message-control-block {
+  height: 96px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,8 +222,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  height: 96px;
   -webkit-box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
   box-shadow: 0 3px 80px rgba(23, 24, 32, 0.2);
   background-color: #2196f3; }
@@ -247,7 +258,7 @@
 .inbox-block_img {
   width: 18px;
   height: 18px;
-  background-image: url(/src/assets/images/icons/inbox.png); }
+  background-image: url(/assets/images/icons/inbox.png); }
 
 .inbox-block_txt {
   color: #ffffff;
@@ -271,7 +282,7 @@
 .sent-block_img {
   width: 19px;
   height: 16px;
-  background-image: url(/src/assets/images/icons/telegram.png); }
+  background-image: url(/assets/images/icons/telegram.png); }
 
 .sent-block_txt {
   color: #2b2d3c;
@@ -295,7 +306,7 @@
 .trash-block_img {
   width: 14px;
   height: 18px;
-  background-image: url(/src/assets/images/icons/delete.png); }
+  background-image: url(/assets/images/icons/delete.png); }
 
 .trash-block_txt {
   color: #2b2d3c;
@@ -346,7 +357,7 @@
 .filter-block_arrow {
   width: 12px;
   height: 8px;
-  background-image: url(/src/assets/images/icons/arrow.png); }
+  background-image: url(/assets/images/icons/arrow.png); }
 
 .messages-list-block {
   display: -webkit-box;
@@ -360,8 +371,11 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 536px;
-  height: 980px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  height: 977px;
   -webkit-box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
   box-shadow: 0 3px 80px rgba(23, 24, 32, 0.3);
   background-color: #2b2d3c; }
@@ -422,33 +436,9 @@
 .message-block_user-photo_first {
   margin-right: 10px;
   display: block;
-  width: 42px;
-  height: 42px;
-  background-image: url(/src/assets/images/pictures/photo1.png); }
-
-.message-block_user-photo_second {
-  margin-left: -30px;
-  margin-right: 15px;
-  display: block;
-  width: 42px;
-  height: 42px;
-  background-image: url(/src/assets/images/pictures/photo2.png); }
-
-.message-block_user-photo_third {
-  margin-left: -42px;
-  margin-right: 10px;
-  display: block;
-  width: 42px;
-  height: 42px;
-  background-image: url(/src/assets/images/pictures/photo3.png); }
-
-.message-block_user-photo_fourth {
-  margin-left: -25px;
-  margin-right: 10px;
-  display: block;
-  width: 42px;
-  height: 42px;
-  background-image: url(/src/assets/images/pictures/photo4.png); }
+  width: 50px;
+  height: 50px;
+  background-image: url(/assets/images/pictures/user.png); }
 
 .message-block_username {
   color: #ffffff;
@@ -461,7 +451,7 @@
   font-weight: 400; }
 
 .message-block_txt {
-  margin-left: -10px;
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,13 +466,12 @@
   -webkit-box-align: unset;
   -ms-flex-align: unset;
   align-items: unset;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #9ca1b2;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #2196f3;
+  font-size: 20px;
+  font-weight: 900;
   line-height: 28px;
   letter-spacing: 0.32px; }
 
@@ -535,3 +524,91 @@
 .conversation-btn-block_btn_plus {
   color: #79baf0;
   font-size: 30px; }
+
+.message-block-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  height: 955px;
+  width: 640px;
+  background-color: transparent; }
+
+.message-send-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.message-block-area_input {
+  margin-right: 20px;
+  padding-left: 23px;
+  width: 440px;
+  height: 51px;
+  border-radius: 10px;
+  border: 1px solid rgba(156, 161, 178, 0.3);
+  color: #9ca1b2;
+  font-size: 16px;
+  background-color: #404359; }
+
+.message-block-area_input_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 133px;
+  height: 48px;
+  border-radius: 24px;
+  border: 2px solid #2196f3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: transparent; }
+
+.message-cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 25%;
+  background-color: #2196f3; }

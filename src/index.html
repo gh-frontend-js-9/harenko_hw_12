@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/auth/normalize.css">
+    <link rel="stylesheet" href="assets/styles/auth/log-in.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Virtus | Log in</title>
+</head>
+<body>
+    <div class="log-in-area">
+    <div class="log-in">
+    <span class="log-in-title">Log in</span>
+    <a class="sign-up-link" href="sign-up.html" target="_blank">Not a member?</a>
+   <form class="log-in-form" id="form">
+        <input class="log-in-form_email" type="email" name="email" id="email" placeholder="Email...">
+        <input class="log-in-form_pass" type="password" name="password" id="password" placeholder="Password..."> 
+    </form>
+   <span class="log-warning" id="warning">Oops, looks like your email or password is incorrect.<br>Please try again</span>
+    <a class="remember" href="repass.html" target="_blank">Forgot password?</a>
+    <button class="submit-btn" id="submit">Log in</button>
+    </div>
+    </div>
+    <script src="app/auth/log-in.js"></script>
+</body>
+</html>

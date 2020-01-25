@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/auth/normalize.css">
+    <link rel="stylesheet" href="assets/styles/auth/log-in.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Virtus | Sign up</title>
+</head>
+<body>
+    <div class="log-in-area">
+    <div class="log-in">
+    <span class="log-in-title">Sign up</span>
+    <a class="sign-up-link" href="index.html" target="_blank">Existing member?</a>
+   <form class="log-in-form" id="form">
+        <input class="log-in-form_email" type="email" name="email" id="email" placeholder="Email...">
+        <input class="log-in-form_pass" type="password" name="password" id="password" placeholder="Password..."> 
+        <input class="log-in-form_pass" type="text" name="name" id="name" placeholder="Name...">
+    </form>
+   <span class="sign-warning" id="warning">You are already registered<br>
+   or your password is more than 8 characters</span>
+   <button class="submit-btn" type="submit" id="submit">Sign up</button>
+    </div>
+    </div>
+    <script src="app/auth/sign-up.js"></script>
+</body>
+</html>
