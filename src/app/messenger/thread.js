@@ -1,4 +1,4 @@
-import { Render ,messagesListBlock, messageBlockArea } from './render.js'
+import {Render, messagesListBlock, messageBlockArea } from './render.js' 
 
 // CREATE THREAD
 
